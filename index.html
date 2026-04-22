@@ -3,57 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Porfolio | Jorge Ortiz Vilaplana</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <title>Jorge Ortiz Vilaplana | Portafolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav>
-        <div class="container">
-            <span class="logo">/dev/jorgeoz</span>
-        </div>
-    </nav>
 
     <header>
-        <div class="container">
-            <h1>Hola, soy <span class="highlight">Jorge Ortiz Vilaplana</span></h1>
+        <nav>
+            <div class="logo">/dev/<span>jorgeoz</span></div>
+            <ul>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="mailto:jorortvil@gmail.com" class="btn-contact">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="hero">
+            <p class="dev-tag">Hola, soy</p>
+            <h1>Jorge Ortiz Vilaplana</h1>
             <p class="subtitle">Estudiante de Desarrollo de Aplicaciones Multiplataforma</p>
+            <p class="description">Aprendiendo a construir software y gestionar sistemas. Actualmente enfocado en Java, bases de datos y entornos Linux/Docker.</p>
+            <div class="hero-btns">
+                <a href="#proyectos" class="btn-primary">Ver mis repositorios</a>
+                <a href="https://github.com/JorgeOz" target="_blank" class="btn-secondary">GitHub</a>
+            </div>
         </div>
     </header>
 
-    <main class="container">
-        <section id="proyectos">
-            <h2><span class="icon">🚀</span> Proyecto Intermodular</h2>
-            <div class="card project-main">
+    <section id="proyectos" class="container">
+        <h2 class="section-title">Proyecto Intermodular</h2>
+        <div class="main-project">
+            <div class="project-content">
+                <span class="project-tag">Gestión de Gimnasio</span>
                 <h3>GymFit Center</h3>
-                <p>Este es el proyecto principal del curso. Una aplicación completa desarrollada con Java y bases de datos SQL que resuelve la gestión integral de un gimnasio, facilitando la administración de usuarios, socios, actividades, horarios, ofertas y reservas de manera estructurada y eficiente.</p>
+                <p>Diseño y modelado de la base de datos para la gestión integral de un centro deportivo. Incluye el esquema relacional, diagramas y scripts de creación SQL.</p>
                 <div class="tags">
-                    <span>Java</span> <span>MySQL</span> <span>Swing/JavaFX</span>
+                    <span>MySQL</span> <span>SQL</span> <span>Relational Design</span>
                 </div>
-                <a href="URL_DEL_REPO" class="btn">Ver Código en GitHub</a>
+                <a href="https://github.com/JorgeOz/GymFit-Center" target="_blank" class="btn-project">Abrir Repositorio →</a>
             </div>
+        </div>
 
-            <h2><span class="icon">📂</span> Otros Proyectos</h2>
-            <div class="grid">
-                <div class="card">
-                    <h3>Módulo Programación</h3>
-                    <p>Colección de algoritmos, estructuras de datos y ejercicios prácticos en Java.</p>
-                    <a href="#" class="link">Ver ejercicios</a>
-                </div>
-                <div class="card">
-                    <h3>Lenguaje de Marcas</h3>
-                    <p>Diseño de interfaces web, validación de archivos XML y transformación XSLT.</p>
-                    <a href="#" class="link">Ver prácticas</a>
-                </div>
+        <h2 class="section-title">Módulos del Ciclo (DAM)</h2>
+        <div class="project-grid">
+            <div class="card">
+                <h4>Programación</h4>
+                <p>Ejercicios y prácticas desarrolladas en Java, centradas en lógica de programación y POO.</p>
+                <div class="tags"><span>Java</span> <span>Lógica</span></div>
+                <a href="https://github.com/JorgeOz/DAM/tree/main/programacion" target="_blank" class="btn-link">Ver archivos →</a>
             </div>
-        </section>
-    </main>
+            <div class="card">
+                <h4>Lenguaje de Marcas</h4>
+                <p>Desarrollo frontend (HTML5/CSS3), lógica con JavaScript y gestión de datos con XML/XSD.</p>
+                <div class="tags"><span>HTML/CSS</span> <span>JavaScript</span> <span>XML</span></div>
+                <a href="https://github.com/JorgeOz/DAM/tree/main/lenguaje-marcas" target="_blank" class="btn-link">Ver archivos →</a>
+            </div>
+            <div class="card">
+                <h4>Entornos y Sistemas</h4>
+                <p>Prácticas de control de versiones con Git y configuración de entornos en Linux/Docker.</p>
+                <div class="tags"><span>Git</span> <span>Linux</span> <span>Docker</span></div>
+                <a href="https://github.com/JorgeOz/DAM" target="_blank" class="btn-link">Ver archivos →</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="habilidades" class="container bg-dark-alt">
+        <h2 class="section-title">Stack Tecnológico</h2>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h5>Desarrollo</h5>
+                <ul>
+                    <li>Java</li>
+                    <li>SQL (MySQL)</li>
+                    <li>HTML5 / CSS3</li>
+                    <li>JavaScript</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h5>Sistemas</h5>
+                <ul>
+                    <li>Linux (Terminal)</li>
+                    <li>Docker</li>
+                    <li>Virtualización</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h5>Herramientas</h5>
+                <ul>
+                    <li>Git / GitHub</li>
+                    <li>IntelliJ IDEA</li>
+                    <li>VS Code</li>
+                </ul>
+            </div>
+        </div>
+    </section>
 
     <footer>
-        <div class="container">
-            <p>&copy; JorgeOz | Desarrollador de Aplicaciones</p>
-        </div>
+        <p>&copy; 2026 Jorge Ortiz Vilaplana</p>
+        <p>Estudiante de DAM | Aprendizaje continuo</p>
     </footer>
+
 </body>
 </html>
