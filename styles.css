@@ -1,3 +1,6 @@
+/* RESET GENERAL */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
 :root {
     --black: #000000;
     --dark: #070707;
@@ -10,8 +13,6 @@
     --font-code: 'Fira Code', monospace;
 }
 
-* { margin: 0; padding: 0; box-sizing: border-box; }
-
 body {
     background-color: var(--black);
     color: var(--text);
@@ -23,11 +24,11 @@ body {
 
 .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
 
-/* NAV */
+/* NAVEGACIÓN */
 nav { display: flex; justify-content: space-between; align-items: center; padding: 30px 10%; position: absolute; width: 100%; z-index: 10; }
 .logo { font-family: var(--font-code); font-weight: bold; font-size: 1.2rem; text-decoration: none; color: var(--text); }
 .logo span { color: var(--accent); }
-nav ul { display: flex; list-style: none; } /* Esto quita los puntos */
+nav ul { display: flex; list-style: none; }
 nav ul li { margin-left: 30px; }
 nav a { text-decoration: none; color: var(--dim); font-size: 0.85rem; transition: 0.3s; text-transform: uppercase; letter-spacing: 1px; }
 nav a:hover { color: var(--text); }
@@ -45,8 +46,17 @@ h1 { font-size: clamp(2.5rem, 8vw, 4.5rem); font-weight: 900; letter-spacing: -3
 .btn-sub { border: 1px solid var(--border); color: var(--text); padding: 14px 30px; text-decoration: none; border-radius: 4px; transition: 0.3s; }
 .btn-sub:hover { background: var(--border); }
 
-/* SECCIONES */
-.label { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 4px; color: var(--accent); margin-bottom: 30px; margin-top: 0; }
+/* ETIQUETAS DE SECCIÓN */
+.label { 
+    font-size: 0.7rem; 
+    text-transform: uppercase; 
+    letter-spacing: 4px; 
+    color: var(--accent); 
+    margin-bottom: 20px; 
+    margin-top: 20px; 
+}
+
+/* PROYECTOS */
 .featured-card { background: var(--dark); padding: 50px; border: 1px solid var(--border); border-radius: 8px; transition: 0.3s; }
 .featured-card:hover { border-color: #333; }
 h3 { font-size: 2.2rem; margin-bottom: 15px; }
@@ -56,27 +66,32 @@ h3 { font-size: 2.2rem; margin-bottom: 15px; }
 .link-arrow { color: var(--accent); text-decoration: none; font-weight: bold; font-size: 0.85rem; border-bottom: 1px solid transparent; transition: 0.3s; }
 .link-arrow:hover { border-bottom: 1px solid var(--accent); }
 
-/* GRID DE DOS COLUMNAS */
 .grid-two { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 25px; margin-top: 20px; }
 .card { background: var(--dark); padding: 40px; border-radius: 8px; border: 1px solid var(--border); transition: 0.3s; }
 .card:hover { border-color: var(--accent); transform: translateY(-5px); }
 .card h4 { font-size: 1.4rem; margin-bottom: 12px; }
 .card p { color: var(--dim); font-size: 0.9rem; margin-bottom: 25px; }
 
-/* SKILLS */
-.skills-section { background: var(--dark); padding: 60px 0; margin-top: 60px; border-top: 1px solid var(--border); }
+/* STACK TECNOLÓGICO - AQUÍ ESTÁ EL CAMBIO DE ESPACIO */
+.skills-section { 
+    background: var(--dark); 
+    padding: 50px 0; /* Bajado de 100px a 50px */
+    margin-top: 50px; /* Bajado de 120px a 50px */
+    border-top: 1px solid var(--border); 
+}
 .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 50px; }
 .skill-item h5 { color: var(--accent); margin-bottom: 15px; font-family: var(--font-code); font-size: 0.9rem; }
-.skill-item p { color: var(--dim); font-size: 0.95rem; list-style: none;}
+.skill-item p { color: var(--dim); font-size: 0.95rem; }
 
 footer { text-align: center; padding: 60px; color: #333; font-size: 0.75rem; letter-spacing: 1px; }
 
+/* RESPONSIVE */
 @media (max-width: 768px) {
     h1 { font-size: 2.8rem; }
-    nav { padding: 20px 5%; position: relative; flex-direction: column; gap: 15px;}
+    nav { padding: 20px 5%; position: relative; flex-direction: column; gap: 15px; }
     nav ul { flex-wrap: wrap; justify-content: center; }
     nav ul li { margin: 0 10px; }
     .grid-two { grid-template-columns: 1fr; }
-    .cta-group { flex-direction: column; width: 100%; gap: 10px;}
-    .hero { height: auto; padding-top: 100px;}
+    .cta-group { flex-direction: column; width: 100%; gap: 10px; }
+    .hero { height: auto; padding-top: 100px; }
 }
