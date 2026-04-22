@@ -46,7 +46,7 @@ h1 { font-size: clamp(2.5rem, 8vw, 4.5rem); font-weight: 900; letter-spacing: -3
 .btn-sub:hover { background: var(--border); }
 
 /* SECCIONES */
-.label { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 4px; color: var(--accent); margin-bottom: 30px; margin-top: 100px; }
+.label { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 4px; color: var(--accent); margin-bottom: 30px; margin-top: 0; }
 .featured-card { background: var(--dark); padding: 50px; border: 1px solid var(--border); border-radius: 8px; transition: 0.3s; }
 .featured-card:hover { border-color: #333; }
 h3 { font-size: 2.2rem; margin-bottom: 15px; }
@@ -64,7 +64,7 @@ h3 { font-size: 2.2rem; margin-bottom: 15px; }
 .card p { color: var(--dim); font-size: 0.9rem; margin-bottom: 25px; }
 
 /* SKILLS */
-.skills-section { background: var(--dark); padding: 100px 0; margin-top: 120px; border-top: 1px solid var(--border); }
+.skills-section { background: var(--dark); padding: 60px 0; margin-top: 60px; border-top: 1px solid var(--border); }
 .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 50px; }
 .skill-item h5 { color: var(--accent); margin-bottom: 15px; font-family: var(--font-code); font-size: 0.9rem; }
 .skill-item p { color: var(--dim); font-size: 0.95rem; list-style: none;}
